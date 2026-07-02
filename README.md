@@ -1,1 +1,1 @@
-# text-analysis-and-identification
+Lets explore ways to analyze and identify text.
