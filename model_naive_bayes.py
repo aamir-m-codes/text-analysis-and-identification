@@ -10,13 +10,11 @@ def from_scratch(data):
 
     train_data_generated = preprocessing.lower_case(train_data_generated)
     train_data_written = preprocessing.lower_case(train_data_written)
-
     test_data_generated = preprocessing.lower_case(test_data_generated)
     test_data_written = preprocessing.lower_case(test_data_written)
 
     train_data_generated = preprocessing.split_features(train_data_generated)
     train_data_written = preprocessing.split_features(train_data_written)
-
     test_data_generated = preprocessing.split_features(test_data_generated)
     test_data_written = preprocessing.split_features(test_data_written)
 

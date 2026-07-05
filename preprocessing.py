@@ -26,12 +26,7 @@ def split_train_test(data, train_size=0.8):
     return train_data_generated, train_data_written, test_data_generated, test_data_written
 
 def lower_case(data):
-    for i in range(len(data)):
-        data.iloc[i] = data.iloc[i].lower()
-    return data
+    return data.str.lower()
 
 def split_features(data):
-    # will act as a basic tokenizer
     return data.str.split()
-
-
