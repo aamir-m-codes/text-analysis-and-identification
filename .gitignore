@@ -484,3 +484,7 @@ venv/
 *.jpeg
 *.png
 *.gif
+
+.pkl
+
+*.pkl
