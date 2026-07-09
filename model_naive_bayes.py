@@ -79,7 +79,7 @@ def from_scratch(data):
 def from_sklearn(data):
     train_X, test_X, train_y, test_y = train_test_split(data.text, data.label, test_size=0.1)
 
-    vectrizer = CountVectorizer(lowercase=True)
+    vectrizer = CountVectorizer()
     train_c = vectrizer.fit_transform(train_X)
     test_c = vectrizer.transform(test_X)
 
