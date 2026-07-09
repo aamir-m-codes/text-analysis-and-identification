@@ -10,10 +10,13 @@ count_vec = joblib.load('models/nb_vectorizer.pkl')
 @app.route('/', methods=['GET', 'POST'])
 def index():
     predictions = None
-
+    file = request.files.get('file')
+    
     if request.method == 'POST':
-
-        text = request.form['text']
+        if file and file.name.endswith('.txt'):
+            text = file.read().decode('utf-8')
+        else:
+            text = request.form['text']
         vec = count_vec.transform([text])
         prb = nb_model.predict_proba(vec)[0]
         pred = nb_model.predict(vec)[0]
