@@ -4,16 +4,16 @@ and find out if a piece of text was written by someone or generated.
 classifying the text into written and generated categories.
 using Flask to display text box, get input and show result
 
--   Preprocessing
+-   preprocessing
     -   split the data into training and testing
     -   lowercasing the text
     -   tokenizing the text
 
--   Read Data
+-   read data
     -   reading csv data
 
--   Model Naive Bayes
-    -   from scratch
-    -   from sklearn
+-   models
+    -   naive bayes
 
--   SVM
+-   graphs
+
