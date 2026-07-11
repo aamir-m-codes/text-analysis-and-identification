@@ -17,8 +17,8 @@ def naive_bayes(data):
     nb.fit(train_c, train_y)
 
     # joblib.dump(nb, 'models/nb.pkl')
-    # joblib.dump(vectrizer, 'models/nb_vectorizer.pkl')
-    score = nb.score(test_c, test_y)
+    # joblib.dump(vectrizer, 'models/count_vectorizer.pkl')
+    # score = nb.score(test_c, test_y)
     print(score)
 
 def svm(data):
@@ -42,4 +42,4 @@ def svm(data):
 
 data = read_data.read_data_merged()
 #naive_bayes(data)
-svm(data)
+#svm(data)
